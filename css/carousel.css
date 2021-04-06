@@ -1,0 +1,85 @@
+div.title-bar {
+	float:left;
+	width:100%;	
+}
+
+div.title-bar .icon{
+	float: left;
+    display: block;
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/lightbulb.png');
+    background-repeat: no-repeat;
+    
+}
+
+div.title-bar .title{
+	display: block;
+    position: relative;
+    left: 0;
+    font-size:x-large;    
+    color:#0367D7;
+    font-family: sans-serif;
+}
+div.title-bar .subtitle{
+    clear: left;
+    position: relative;
+    font-size:large;
+    color:#676767;
+    font-family: sans-serif;
+}
+
+li.slide div.title {
+	font-size:x-small;
+	color:#0367D7;
+	font-weight:bold;
+	text-align: left;
+	font-family: sans-serif;
+	margin:auto;
+	padding:0em;	
+	overflow-wrap :break-word;
+	width:95%;
+	display:block;	
+	position:relative;
+	top:-1.5em;
+}
+
+li.slide div.type {
+	position: relative;
+    bottom:2em;
+    left: 0px;
+    background: black;
+    color: white;
+    text-align: left;
+    font-size: x-small;
+    font-family: sans-serif;
+    line-height: 1.8em;
+    opacity:0.65;
+    padding-left:.4em; 
+    padding-right:.4em;
+       	    
+}
+
+div.type span.duration {
+	
+    visibility: visible;
+    float: right;
+    display: block;
+    padding-right: 1em;
+	
+}
+
+li.collection {
+	background-image: url('../images/collection.gif');
+	background-repeat: no-repeat;
+	background-position:bottom;
+	
+}
+
+li.single{
+	background-image: url('../images/single.gif');
+	background-repeat: no-repeat;
+	background-position:bottom;
+	
+}
+

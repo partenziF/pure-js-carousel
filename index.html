@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<title>Carousel demo page ( Par.fe! ) </title>
+	
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/carousel.css" rel="stylesheet">
+
+  </head>
+  <body>
+	<h1>Carousel demo page</h1>
+	
+	<div id="my-carousel">
+	</div>
+	
+	
+	<div id="my-carousel2"></div>
+	
+  
+	
+    <script src="js/carousel.js"></script>
+
+	<script language="">
+		
+		//code for random title with vars
+		var s = "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet";
+		var tokens = s.split(" ");		
+		var minW = 8;
+		var maxW = 4;
+		var Length = 2;
+
+		var option1 = {
+			container : "#my-carousel",
+			title : "Lorem ipsum dolor sit amet",
+			subtitle : "consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore",
+			ferchCards : function(chunkSize) {
+
+			let data = [
+
+					{image:"40351776593_0bb8f3e7c5_q.jpg",type:"video",duration:'',title:"1) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"40351777383_b4a4d1689a_q.jpg",type:"learning_plan",duration:'',title:"2) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"40351778543_4a32be7c18_q.jpg",type:"video",duration: new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"3) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"40351780943_1f2aeace0d_q.jpg",type:"elearning",duration:'',title:"4) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"46382430935_dbf3f8447b_q.jpg",type:"playlist",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"5) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"46401786315_edd18532a5_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"6) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"single"},
+					{image:"47264364572_d5ee619fb3_q.jpg",type:"learning_plan",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"7) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"collection"},
+					{image:"47264382512_f9d400a4b8_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"8) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"collection"},
+					{image:"47297138651_32f5e552c1_q.jpg",type:"playlist",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"9) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"single"},
+					{image:"47297139381_9d2c683ff1_q.jpg",type:"elearning",duration:'',title:"10) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"collection"},
+					{image:"50814947341_4a8b662651_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"11) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"50815026067_3aa72ac181_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"12) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"3300521317_03dcb9998f_q.jpg",type:"learning_plan",duration:'',title:"13) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"40351784153_1f216f8cca_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"14) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"47316800271_7093d82958_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"15) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"46401787505_838d57118d_q.jpg",type:"elearning",duration:'',title:"16) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"47264362962_3f7207da0a_q.jpg",type:"playlist",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"17) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"46401786195_4e7dc6532c_q.jpg",type:"elearning",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"18) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"}
+
+				];
+
+			let max = 8;
+			let min = 2;
+			let chunkReturned = 10;//Math.floor(Math.random() * (max - min + 1)) + min
+			result = new Array();
+			for (j = min; j <= chunkReturned; j++) {
+  				let i = Math.floor( ( Math.random() * ( ( data.length - chunkSize )  - 1) ) + 1 );
+				result.push( data.slice(i, i + chunkSize) );
+			}
+			
+			return result;
+
+
+			}
+
+		};
+		
+		var c = new CCarousel(option1);
+		
+
+
+				
+		s = "Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat sed diam voluptua At vero eos et accusam et justo duo dolores et ea rebum Stet clita kasd gubergren no sea takimata sanctus est Lorem ipsum dolor sit amet";
+
+		//alert(tokens.slice(Math.floor( ( Math.random() * (tokens.length / 4) ) ),Math.floor(Math.random()*maxW + minW)).join(" "));
+		var option2 = {
+			container : "#my-carousel2",
+			title : "nonumy eirmod tempor invidunt ut labore",
+			subtitle : "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+			ferchCards : function(chunkSize) {
+
+			let data = [
+
+					{image:"25135549306_b671c01053_q.jpg",type:"video",duration:'',title:"A) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"25161907065_81766634dc_q.jpg",type:"learning_plan",duration:'',title:"B) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"24438612999_1b0e2c7677_q.jpg",type:"video",duration: new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"C) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"24780018846_0c1d451a97_q.jpg",type:"elearning",duration:'',title:"D) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"24806278325_a7ce437786_q.jpg",type:"playlist",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"E) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"24119958367_69117845b1_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"F) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"single"},
+					{image:"24438604899_023d7ff0af_q.jpg",type:"learning_plan",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"G) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"collection"},
+					{image:"578462926_1294fec07b_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"H) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"collection"},
+					{image:"5099838147_7fb965658a_q.jpg",type:"playlist",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"I) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"single"},
+					{image:"4615217885_0bf565318f_q.jpg",type:"elearning",duration:'',title:"L) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "), cardinality:"collection"},
+					{image:"4615840388_5881911f4e_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"M) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"5110233061_aa3b1c47ef_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"N) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"3338275165_b00171c504_q.jpg",type:"learning_plan",duration:'',title:"O) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"15867520885_69d04f6ecc_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"P) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"5110834170_0797f39278_q.jpg",type:"video",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"Q) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"5110231975_41ce19ef23_q.jpg",type:"elearning",duration:'',title:"R) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"},
+					{image:"2207159142_8206ab6984_q.jpg",type:"playlist",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"S) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"single"},
+					{image:"25690386427_8c2b3eaf76_q.jpg",type:"elearning",duration:new Number( Math.floor( Math.random() * 3600 + Math.random() * 1800 ) ),title:"T) "+tokens.slice(Math.floor( ( Math.random() * Length ) ),Math.floor(Math.random()*maxW + minW)).join(" "),cardinality:"collection"}
+
+				];
+
+			let max = 6;
+			let min = 2;
+			let chunkReturned = 7;//Math.floor(Math.random() * (max - min + 1)) + min
+			result = new Array();
+			for (j = min; j <= chunkReturned; j++) {
+  				let i = Math.floor( ( Math.random() * ( ( data.length - chunkSize )  - 1) ) + 1 );
+				result.push( data.slice(i, i + chunkSize) );
+			}
+			
+			return result;
+
+
+			}
+
+		};
+
+		var c2 = new CCarousel(option2);
+
+	</script>
+
+  </body>
+</html>
